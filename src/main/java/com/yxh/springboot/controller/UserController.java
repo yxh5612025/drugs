@@ -160,6 +160,9 @@ public class UserController {
         userPasswordDTO.setPassword(SecureUtil.md5(userPasswordDTO.getPassword()));
         userPasswordDTO.setNewPassword(SecureUtil.md5(userPasswordDTO.getNewPassword()));
          userService.updatePassword(userPasswordDTO);
+        System.out.println("1111111111");
+        System.out.println("1111111111");
+        System.out.println("1111111111");
         return Result.success();
     }
 }
